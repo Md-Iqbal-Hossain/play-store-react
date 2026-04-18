@@ -27,7 +27,7 @@ const Navbar = () => {
                 <img src={logoImg} alt="" className='w-[50px]'/>
             <ul className='flex justify-between gap-2 items-center'>
                 {
-                    navItems.map((item) => <MyNavLink to={item.path}>{item.text}</MyNavLink>)
+                    navItems.map((item, index) => <MyNavLink key={index} to={item.path}>{item.text}</MyNavLink>)
                 }
 
                 {/* <li>
